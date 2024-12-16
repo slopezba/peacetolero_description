@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="peacetolero/">
+  
+  <!-- Parameters -->
+  <xacro:property name="prefix" value=""/>
+
+  <!-- Base Link -->
+  <link name="${prefix}base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://peacetolero_description/meshes/peacetolero.dae" scale="1 1 1"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://peacetolero_description/meshes/peacetolero.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0"
+              iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+  </link>
+
+</robot>
