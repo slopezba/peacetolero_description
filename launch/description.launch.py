@@ -7,7 +7,7 @@ def generate_launch_description():
     xacro_file = PathJoinSubstitution([
         FindPackageShare("peacetolero_description"),
         "urdf",
-        "urdf.xacro"
+        "alejandro_arm.xacro"
     ])
 
     return LaunchDescription([
