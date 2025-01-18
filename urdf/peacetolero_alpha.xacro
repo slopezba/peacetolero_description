@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="peacetolero_alpha" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Incluir el xacro file 1 -->
+  <xacro:include filename="$(find peacetolero_description)/urdf/urdf.xacro" />
+
+  <!-- Incluir el alpha.urdf.xacro directamente -->
+  <xacro:include filename="$(find alpha_description)/xacro/alpha.urdf.xacro" />
+
+  <!-- Instanciar los modelos -->
+  <xacro:macro name="peacetolero_alpha" params="prefix">
+    <xacro:property name="description_package" value="alpha_description" />
+    <xacro:property name="prefix" value="$(arg prefix)" />
+
+    <!-- Instanciar peacetolero -->
+    <xacro:peacetolero_macro prefix="$(arg prefix)" />
+
+    <!-- Instanciar el alpha.urdf.xacro -->
+    <xacro:alpha_urdf parent="$(arg prefix)base_link" prefix="$(arg prefix)alpha_"
+      description_package="${description_package}">
+      <origin xyz="0.404 -0.022 -0.048" rpy="0 0 0" />
+    </xacro:alpha_urdf>
+  </xacro:macro>
+
+</robot>

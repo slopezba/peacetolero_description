@@ -7,7 +7,7 @@ def generate_launch_description():
     xacro_file = PathJoinSubstitution([
         FindPackageShare("peacetolero_description"),
         "urdf",
-        "alejandro_arm.xacro"
+        "peacetolero_alpha.config.xacro"
     ])
 
     return LaunchDescription([
@@ -18,5 +18,14 @@ def generate_launch_description():
             parameters=[{
                 "robot_description": Command(["xacro ", xacro_file])
             }]
+        ),
+
+        # Nodo joint_state_publisher_gui (si prefieres una interfaz gráfica)
+        Node(
+            package="joint_state_publisher_gui",
+            executable="joint_state_publisher_gui",
+            name="joint_state_publisher_gui",
+            parameters=[{"use_sim_time": False}],
+            condition=None  # Ajusta si quieres habilitarlo opcionalmente
         )
     ])
