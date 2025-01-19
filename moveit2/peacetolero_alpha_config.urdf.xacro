@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="alpha" xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:include filename="$(find peacetolero_description)/moveit2/peacetolero_alpha_config.srdf" />
+
+  <xacro:alpha_srdf/>
+
+</robot>

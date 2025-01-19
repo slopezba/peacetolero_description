@@ -26,7 +26,7 @@ install(DIRECTORY urdf meshes config
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(DIRECTORY launch config
+install(DIRECTORY launch config moveit2
   DESTINATION share/${PROJECT_NAME}
 )
 

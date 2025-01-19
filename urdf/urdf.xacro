@@ -15,6 +15,7 @@
         </material>
       </visual>
       <collision>
+        <origin rpy="0 0 1.5708" xyz="0 0 0" />
         <geometry>
           <mesh filename="package://peacetolero_description/meshes/peacetolero.dae" scale="1 1 1"/>
         </geometry>
