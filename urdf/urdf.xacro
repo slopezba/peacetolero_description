@@ -23,7 +23,7 @@
     </link>
     <link name="${prefix}alpha_suport">
       <visual>
-        <origin rpy="0 0 1.5708" xyz="0 0 0" />
+        <origin rpy="0 0 1.5708" xyz="0 0.11 0" />
         <geometry>
           <mesh filename="package://peacetolero_description/meshes/soporte_alpha.dae" scale="1 1 1"/>
         </geometry>
@@ -32,6 +32,7 @@
         </material>
       </visual>
       <collision>
+        <origin rpy="0 0 1.5708" xyz="0 0.11 0" />
         <geometry>
           <mesh filename="package://peacetolero_description/meshes/soporte_alpha.dae" scale="1 1 1"/>
         </geometry>
