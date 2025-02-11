@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="pipe">
+    <!-- Link principal con el mesh -->
+    <link name="pipe">
+        <visual>
+            <geometry>
+                <mesh filename="package://peacetolero_description/meshes/pipe.dae" scale="1 1 1"/>
+            </geometry>
+        </visual>
+    </link>
+</robot>
