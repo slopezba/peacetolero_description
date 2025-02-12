@@ -256,7 +256,7 @@ Visualization Manager:
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
-      Velocity_Scaling_Factor: 0.30000000000000004
+      Velocity_Scaling_Factor: 0.3
     - Class: rviz_default_plugins/TF
       Enabled: false
       Frame Timeout: 15
@@ -276,28 +276,28 @@ Visualization Manager:
       Max Value: 1
       Median window: 5
       Min Value: 0
-      Name: Image
+      Name: fronta_camera
       Normalize Range: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /frontal_camera/image_raw
+        Value: /frontal_camera/image_raw_uncompressed
       Value: true
     - Class: rviz_default_plugins/Image
       Enabled: true
       Max Value: 1
       Median window: 5
       Min Value: 0
-      Name: Image
+      Name: alpha_camera
       Normalize Range: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /camera/image_raw
+        Value: /reach_alpha_camera/image_raw_uncompressed
       Value: true
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
@@ -358,10 +358,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5650005340576172
+      Pitch: 0.4050006866455078
       Target Frame: peacetolero_base_link
       Value: Orbit (rviz_default_plugins)
-      Yaw: 4.548352241516113
+      Yaw: 4.633353233337402
     Saved: ~
 Window Geometry:
   Displays:
@@ -371,15 +371,17 @@ Window Geometry:
     collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
-  Image:
-    collapsed: false
   MotionPlanning:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000002b400000220fc0200000004fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004100fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001bb000002200000017d00fffffffb0000000800480065006c0070000000029a0000006e0000006e00fffffffb0000000a0056006900650077007300000002fd000000b5000000a400ffffff000000020000073a00000178fc0100000003fb000000100044006900730070006c0061007900730100000000000002ae0000015600fffffffb0000000a0049006d00610067006501000002b4000002cb0000005e00fffffffb0000000a0049006d0061006700650100000585000001b50000005e00ffffff000004800000022000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000200000000000002b400000220fc0200000004fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004100fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001bb000002200000017d00fffffffb0000000800480065006c0070000000029a0000006e0000006e00fffffffb0000000a0056006900650077007300000002fd000000b5000000a400ffffff000000020000073a00000178fc0100000003fb000000100044006900730070006c0061007900730100000000000002ae0000015600fffffffb000000180061006c007000680061005f00630061006d00650072006101000002b4000002cb0000009300fffffffb0000001a00660072006f006e00740061005f00630061006d0065007200610100000585000001b50000009800ffffff000004800000022000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1850
   X: 70
   Y: 27
+  alpha_camera:
+    collapsed: false
+  fronta_camera:
+    collapsed: false
