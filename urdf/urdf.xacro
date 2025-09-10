@@ -6,18 +6,21 @@
     <!-- Base Link -->
     <link name="${prefix}base_link">
       <visual>
-        <origin rpy="0 0 1.5708" xyz="0 0 0" />
+        <!-- <origin rpy="0 0 1.5708" xyz="0 0 0" /> -->
+        <origin rpy="0 1.5708 0" xyz="0 0 0" />
         <geometry>
-          <mesh filename="package://peacetolero_description/meshes/peacetolero.dae" scale="1 1 1"/>
+          <!-- <mesh filename="package://peacetolero_description/meshes/peacetolero.dae" scale="1 1 1"/> -->
+          <mesh filename="package://peacetolero_description/meshes/peacetolero_wheels.dae" scale="1 1 1"/>
         </geometry>
         <material name="blue">
           <color rgba="0 0 1 1"/>
         </material>
       </visual>
       <collision>
-        <origin rpy="0 0 1.5708" xyz="0 0 0" />
+        <!-- <origin rpy="0 0 1.5708" xyz="0 0 0" /> -->
+        <origin rpy="0 1.5708 0.0" xyz="0 0 0" />
         <geometry>
-          <mesh filename="package://peacetolero_description/meshes/peacetolero.dae" scale="1 1 1"/>
+          <mesh filename="package://peacetolero_description/meshes/peacetolero_wheels.dae" scale="1 1 1"/>
         </geometry>
       </collision>
     </link>
