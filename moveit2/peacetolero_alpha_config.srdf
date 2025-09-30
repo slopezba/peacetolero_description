@@ -3,81 +3,81 @@
 
     <xacro:macro name="peacetolero_alpha">
 
-        <group name="peacetolero_alpha">
-            <joint name="peacetolero_alpha_axis_a"/>
-            <joint name="peacetolero_alpha_axis_b"/>
-            <joint name="peacetolero_alpha_axis_c"/>
-            <joint name="peacetolero_alpha_axis_d"/>
-            <joint name="peacetolero_alpha_axis_e"/>
+        <group name="peacetolero/alpha">
+            <joint name="peacetolero/alpha_axis_a"/>
+            <joint name="peacetolero/alpha_axis_b"/>
+            <joint name="peacetolero/alpha_axis_c"/>
+            <joint name="peacetolero/alpha_axis_d"/>
+            <joint name="peacetolero/alpha_axis_e"/>
         </group>
 
         <!-- GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. 
              This is useful to define states like 'folded arms' -->
-        <group_state name="Fold" group="peacetolero_alpha">
-            <joint name="peacetolero_alpha_axis_a" value="0"/>
-            <joint name="peacetolero_alpha_axis_b" value="1.57"/>
-            <joint name="peacetolero_alpha_axis_c" value="0"/>
-            <joint name="peacetolero_alpha_axis_d" value="1.5618"/>
-            <joint name="peacetolero_alpha_axis_e" value="0"/>
+        <group_state name="Fold" group="peacetolero/alpha">
+            <joint name="peacetolero/alpha_axis_a" value="0"/>
+            <joint name="peacetolero/alpha_axis_b" value="1.57"/>
+            <joint name="peacetolero/alpha_axis_c" value="0"/>
+            <joint name="peacetolero/alpha_axis_d" value="1.5618"/>
+            <joint name="peacetolero/alpha_axis_e" value="0"/>
         </group_state>
 
-        <group_state name="Unfold" group="peacetolero_alpha">
-            <joint name="peacetolero_alpha_axis_a" value="0"/>
-            <joint name="peacetolero_alpha_axis_b" value="1.57"/>
-            <joint name="peacetolero_alpha_axis_c" value="1.5833"/>
-            <joint name="peacetolero_alpha_axis_d" value="0.7134"/>
-            <joint name="peacetolero_alpha_axis_e" value="3.1416"/>
+        <group_state name="Unfold" group="peacetolero/alpha">
+            <joint name="peacetolero/alpha_axis_a" value="0"/>
+            <joint name="peacetolero/alpha_axis_b" value="1.57"/>
+            <joint name="peacetolero/alpha_axis_c" value="1.5833"/>
+            <joint name="peacetolero/alpha_axis_d" value="0.7134"/>
+            <joint name="peacetolero/alpha_axis_e" value="3.1416"/>
         </group_state>
 
-        <group_state name="Reach" group="peacetolero_alpha">
-            <joint name="peacetolero_alpha_axis_a" value="0"/>
-            <joint name="peacetolero_alpha_axis_b" value="1.57"/>
-            <joint name="peacetolero_alpha_axis_c" value="2.0814"/>
-            <joint name="peacetolero_alpha_axis_d" value="1.3304"/>
-            <joint name="peacetolero_alpha_axis_e" value="3.1416"/>
+        <group_state name="Reach" group="peacetolero/alpha">
+            <joint name="peacetolero/alpha_axis_a" value="0"/>
+            <joint name="peacetolero/alpha_axis_b" value="1.57"/>
+            <joint name="peacetolero/alpha_axis_c" value="2.0814"/>
+            <joint name="peacetolero/alpha_axis_d" value="1.3304"/>
+            <joint name="peacetolero/alpha_axis_e" value="3.1416"/>
         </group_state>
 
-        <group_state name="Home" group="peacetolero_alpha">
-            <joint name="peacetolero_alpha_axis_a" value="0"/>
-            <joint name="peacetolero_alpha_axis_b" value="1.57"/>
-            <joint name="peacetolero_alpha_axis_c" value="0.7116"/>
-            <joint name="peacetolero_alpha_axis_d" value="2.1788"/>
-            <joint name="peacetolero_alpha_axis_e" value="0"/>
+        <group_state name="Home" group="peacetolero/alpha">
+            <joint name="peacetolero/alpha_axis_a" value="0"/>
+            <joint name="peacetolero/alpha_axis_b" value="1.57"/>
+            <joint name="peacetolero/alpha_axis_c" value="0.7116"/>
+            <joint name="peacetolero/alpha_axis_d" value="2.1788"/>
+            <joint name="peacetolero/alpha_axis_e" value="0"/>
         </group_state>
 
         <!-- PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated -->
-        <passive_joint name="peacetolero_alpha_standard_jaws_rs1_130_joint"/>
-        <passive_joint name="peacetolero_alpha_standard_jaws_rs1_139_joint"/>
+        <passive_joint name="peacetolero/alpha_standard_jaws_rs1_130_joint"/>
+        <passive_joint name="peacetolero/alpha_standard_jaws_rs1_139_joint"/>
 
         <!-- DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially 
              come into collision with any other link in the robot. This tag disables collision checking 
              between a specified pair of links. -->
-        <disable_collisions link1="peacetolero_alpha_m1_link" link2="peacetolero_alpha_m2_1_2_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_m1_link" link2="peacetolero_alpha_m2_joint_link" reason="Default"/>
-        <disable_collisions link1="peacetolero_alpha_m1_link" link2="peacetolero_alpha_standard_jaws_base_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_m1_link" link2="peacetolero_alpha_standard_jaws_rs1_130_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m1_link" link2="peacetolero_alpha_standard_jaws_rs1_139_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_1_link" link2="peacetolero_alpha_m2_1_2_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_1_link" link2="peacetolero_alpha_m2_joint_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_1_link" link2="peacetolero_alpha_m3_inline_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_1_link" link2="peacetolero_alpha_suport" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_1_link" link2="peacetolero_base_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_2_link" link2="peacetolero_alpha_m2_joint_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_2_link" link2="peacetolero_alpha_standard_jaws_base_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_2_link" link2="peacetolero_alpha_standard_jaws_rs1_130_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_2_link" link2="peacetolero_alpha_standard_jaws_rs1_139_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_1_2_link" link2="peacetolero_base_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_joint_link" link2="peacetolero_alpha_standard_jaws_base_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_joint_link" link2="peacetolero_alpha_standard_jaws_rs1_130_link" reason="Default"/>
-        <disable_collisions link1="peacetolero_alpha_m2_joint_link" link2="peacetolero_alpha_suport" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m2_joint_link" link2="peacetolero_base_link" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m3_inline_link" link2="peacetolero_alpha_suport" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_m3_inline_link" link2="peacetolero_base_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_standard_jaws_base_link" link2="peacetolero_alpha_standard_jaws_rs1_130_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_standard_jaws_base_link" link2="peacetolero_alpha_standard_jaws_rs1_139_link" reason="Adjacent"/>
-        <disable_collisions link1="peacetolero_alpha_standard_jaws_base_link" link2="peacetolero_alpha_suport" reason="Never"/>
-        <disable_collisions link1="peacetolero_alpha_standard_jaws_rs1_130_link" link2="peacetolero_alpha_standard_jaws_rs1_139_link" reason="Default"/>
-        <disable_collisions link1="peacetolero_alpha_suport" link2="peacetolero_base_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_m1_link" link2="peacetolero/alpha_m2_1_2_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_m1_link" link2="peacetolero/alpha_m2_joint_link" reason="Default"/>
+        <disable_collisions link1="peacetolero/alpha_m1_link" link2="peacetolero/alpha_standard_jaws_base_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_m1_link" link2="peacetolero/alpha_standard_jaws_rs1_130_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m1_link" link2="peacetolero/alpha_standard_jaws_rs1_139_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_1_link" link2="peacetolero/alpha_m2_1_2_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_1_link" link2="peacetolero/alpha_m2_joint_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_1_link" link2="peacetolero/alpha_m3_inline_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_1_link" link2="peacetolero/alpha_suport" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_1_link" link2="peacetolero/base_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_2_link" link2="peacetolero/alpha_m2_joint_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_2_link" link2="peacetolero/alpha_standard_jaws_base_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_2_link" link2="peacetolero/alpha_standard_jaws_rs1_130_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_2_link" link2="peacetolero/alpha_standard_jaws_rs1_139_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_1_2_link" link2="peacetolero/base_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_joint_link" link2="peacetolero/alpha_standard_jaws_base_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_joint_link" link2="peacetolero/alpha_standard_jaws_rs1_130_link" reason="Default"/>
+        <disable_collisions link1="peacetolero/alpha_m2_joint_link" link2="peacetolero/alpha_suport" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m2_joint_link" link2="peacetolero/base_link" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m3_inline_link" link2="peacetolero/alpha_suport" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_m3_inline_link" link2="peacetolero/base_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_standard_jaws_base_link" link2="peacetolero/alpha_standard_jaws_rs1_130_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_standard_jaws_base_link" link2="peacetolero/alpha_standard_jaws_rs1_139_link" reason="Adjacent"/>
+        <disable_collisions link1="peacetolero/alpha_standard_jaws_base_link" link2="peacetolero/alpha_suport" reason="Never"/>
+        <disable_collisions link1="peacetolero/alpha_standard_jaws_rs1_130_link" link2="peacetolero/alpha_standard_jaws_rs1_139_link" reason="Default"/>
+        <disable_collisions link1="peacetolero/alpha_suport" link2="peacetolero/base_link" reason="Adjacent"/>
 
     </xacro:macro>
 

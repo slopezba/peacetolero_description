@@ -69,71 +69,71 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        peacetolero_alpha_base_link:
+        peacetolero/alpha_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_ee_base_link:
+        peacetolero/alpha_ee_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_m1_link:
+        peacetolero/alpha_m1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_m2_1_1_link:
+        peacetolero/alpha_m2_1_1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_m2_1_2_link:
+        peacetolero/alpha_m2_1_2_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_m2_joint_link:
+        peacetolero/alpha_m2_joint_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_m3_inline_link:
+        peacetolero/alpha_m3_inline_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_push_rod:
+        peacetolero/alpha_push_rod:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_standard_jaws_base_link:
+        peacetolero/alpha_standard_jaws_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_standard_jaws_rs1_130_link:
+        peacetolero/alpha_standard_jaws_rs1_130_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_standard_jaws_rs1_139_link:
+        peacetolero/alpha_standard_jaws_rs1_139_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_alpha_standard_jaws_tool:
+        peacetolero/alpha_standard_jaws_tool:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        peacetolero_alpha_suport:
+        peacetolero/alpha_suport:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        peacetolero_base_link:
+        peacetolero/base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -153,33 +153,33 @@ Visualization Manager:
         All Enabled: false
         map:
           Value: true
-        peacetolero_alpha_base_link:
+        peacetolero/alpha_base_link:
           Value: false
-        peacetolero_alpha_ee_base_link:
+        peacetolero/alpha_ee_base_link:
           Value: false
-        peacetolero_alpha_m1_link:
+        peacetolero/alpha_m1_link:
           Value: false
-        peacetolero_alpha_m2_1_1_link:
+        peacetolero/alpha_m2_1_1_link:
           Value: false
-        peacetolero_alpha_m2_1_2_link:
+        peacetolero/alpha_m2_1_2_link:
           Value: false
-        peacetolero_alpha_m2_joint_link:
+        peacetolero/alpha_m2_joint_link:
           Value: false
-        peacetolero_alpha_m3_inline_link:
+        peacetolero/alpha_m3_inline_link:
           Value: false
-        peacetolero_alpha_push_rod:
+        peacetolero/alpha_push_rod:
           Value: false
-        peacetolero_alpha_standard_jaws_base_link:
+        peacetolero/alpha_standard_jaws_base_link:
           Value: false
-        peacetolero_alpha_standard_jaws_rs1_130_link:
+        peacetolero/alpha_standard_jaws_rs1_130_link:
           Value: false
-        peacetolero_alpha_standard_jaws_rs1_139_link:
+        peacetolero/alpha_standard_jaws_rs1_139_link:
           Value: false
-        peacetolero_alpha_standard_jaws_tool:
+        peacetolero/alpha_standard_jaws_tool:
           Value: false
-        peacetolero_alpha_suport:
+        peacetolero/alpha_suport:
           Value: false
-        peacetolero_base_link:
+        peacetolero/base_link:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -188,24 +188,24 @@ Visualization Manager:
       Show Names: false
       Tree:
         map:
-          peacetolero_base_link:
-            peacetolero_alpha_base_link:
-              peacetolero_alpha_m3_inline_link:
-                peacetolero_alpha_m2_1_1_link:
-                  peacetolero_alpha_m2_joint_link:
-                    peacetolero_alpha_m2_1_2_link:
-                      peacetolero_alpha_m1_link:
-                        peacetolero_alpha_ee_base_link:
-                          peacetolero_alpha_push_rod:
+          peacetolero/base_link:
+            peacetolero/alpha_base_link:
+              peacetolero/alpha_m3_inline_link:
+                peacetolero/alpha_m2_1_1_link:
+                  peacetolero/alpha_m2_joint_link:
+                    peacetolero/alpha_m2_1_2_link:
+                      peacetolero/alpha_m1_link:
+                        peacetolero/alpha_ee_base_link:
+                          peacetolero/alpha_push_rod:
                             {}
-                          peacetolero_alpha_standard_jaws_base_link:
-                            peacetolero_alpha_standard_jaws_rs1_130_link:
+                          peacetolero/alpha_standard_jaws_base_link:
+                            peacetolero/alpha_standard_jaws_rs1_130_link:
                               {}
-                            peacetolero_alpha_standard_jaws_rs1_139_link:
+                            peacetolero/alpha_standard_jaws_rs1_139_link:
                               {}
-                            peacetolero_alpha_standard_jaws_tool:
+                            peacetolero/alpha_standard_jaws_tool:
                               {}
-            peacetolero_alpha_suport:
+            peacetolero/alpha_suport:
               {}
       Update Interval: 0
       Value: true

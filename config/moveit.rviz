@@ -68,71 +68,71 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          peacetolero_alpha_base_link:
+          peacetolero/alpha_base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_ee_base_link:
+          peacetolero/alpha_ee_base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m1_link:
+          peacetolero/alpha_m1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m2_1_1_link:
+          peacetolero/alpha_m2_1_1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m2_1_2_link:
+          peacetolero/alpha_m2_1_2_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m2_joint_link:
+          peacetolero/alpha_m2_joint_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m3_inline_link:
+          peacetolero/alpha_m3_inline_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_push_rod:
+          peacetolero/alpha_push_rod:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_base_link:
+          peacetolero/alpha_standard_jaws_base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_rs1_130_link:
+          peacetolero/alpha_standard_jaws_rs1_130_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_rs1_139_link:
+          peacetolero/alpha_standard_jaws_rs1_139_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_tool:
+          peacetolero/alpha_standard_jaws_tool:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          peacetolero_alpha_suport:
+          peacetolero/alpha_suport:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_base_link:
+          peacetolero/base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -160,7 +160,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0.10000000149011612
         Joint Violation Color: 255; 0; 255
-        Planning Group: peacetolero_alpha
+        Planning Group: peacetolero/alpha
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -183,71 +183,71 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          peacetolero_alpha_base_link:
+          peacetolero/alpha_base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_ee_base_link:
+          peacetolero/alpha_ee_base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m1_link:
+          peacetolero/alpha_m1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m2_1_1_link:
+          peacetolero/alpha_m2_1_1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m2_1_2_link:
+          peacetolero/alpha_m2_1_2_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m2_joint_link:
+          peacetolero/alpha_m2_joint_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_m3_inline_link:
+          peacetolero/alpha_m3_inline_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_push_rod:
+          peacetolero/alpha_push_rod:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_base_link:
+          peacetolero/alpha_standard_jaws_base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_rs1_130_link:
+          peacetolero/alpha_standard_jaws_rs1_130_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_rs1_139_link:
+          peacetolero/alpha_standard_jaws_rs1_139_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_alpha_standard_jaws_tool:
+          peacetolero/alpha_standard_jaws_tool:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          peacetolero_alpha_suport:
+          peacetolero/alpha_suport:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          peacetolero_base_link:
+          peacetolero/base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -302,7 +302,7 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
-      Description File: /home/salva/peacetolero_ws/src/peacetolero_description/urdf/pipe.urdf.xacro
+      Description File: /home/salva/peacetolero/ws/src/peacetolero/description/urdf/pipe.urdf.xacro
       Description Source: File
       Description Topic:
         Depth: 5
@@ -359,7 +359,7 @@ Visualization Manager:
       Name: Current View
       Near Clip Distance: 0.009999999776482582
       Pitch: 0.4050006866455078
-      Target Frame: peacetolero_base_link
+      Target Frame: peacetolero/base_link
       Value: Orbit (rviz_default_plugins)
       Yaw: 4.633353233337402
     Saved: ~

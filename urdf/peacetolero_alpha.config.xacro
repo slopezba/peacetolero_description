@@ -10,7 +10,8 @@
   <xacro:arg name="namespace" default="" />
   <!-- cambie el _ por / en  default="peacetolero_" -->
   <xacro:arg name="prefix" default="peacetolero/" />
-  <xacro:arg name="use_sim" default="false" />
+  <!-- importante para stonefish -->
+  <xacro:arg name="use_sim" default="true" />
   <xacro:arg name="alpha_description_package" default="alpha_description" />
   <xacro:arg name="robot_description_package" default="peacetolero_description" />
 
@@ -27,7 +28,7 @@
   </xacro:peacetolero_alpha>
 
   <!-- cambie el _ por / en  prefix="$(arg prefix)alpha_" -->
-  <xacro:alpha_system prefix="$(arg prefix)_alpha/" name="ReachAlpha5" serial_port="$(arg serial_port)" 
+  <xacro:alpha_system prefix="$(arg prefix)alpha_" name="ReachAlpha5" serial_port="$(arg serial_port)" 
     state_update_frequency="$(arg state_update_frequency)"
     initial_positions_file="$(arg initial_positions_file)"
     description_package="${alpha_description_package}" use_sim="${use_sim}"
