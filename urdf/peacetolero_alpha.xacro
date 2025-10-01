@@ -19,7 +19,7 @@
     <!-- cambie el _ por / en  prefix="$(arg prefix)alpha_" -->
     <xacro:alpha_urdf parent="$(arg prefix)base_link" prefix="$(arg prefix)alpha_"
       description_package="${description_package}">
-      <origin xyz="0.404 0.03 -0.048" rpy="0 0 0" />
+      <origin xyz="0.404 -0.03 0.048" rpy="3.1416 0 0" />
     </xacro:alpha_urdf>
   </xacro:macro>
 

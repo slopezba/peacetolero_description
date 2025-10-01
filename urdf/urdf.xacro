@@ -6,7 +6,7 @@
     <!-- Base Link -->
     <link name="${prefix}base_link">
       <visual>
-        <origin rpy="0 0 1.5708" xyz="0 0 0" />
+        <origin rpy="3.1416 0 -1.5708" xyz="0 0 0" />
         <!-- <origin rpy="0 1.5708 0" xyz="0 0 0" /> -->
         <geometry>
           <!-- <mesh filename="package://peacetolero_description/meshes/peacetolero.dae" scale="1 1 1"/> -->
@@ -18,7 +18,7 @@
       </visual>
       <collision>
         <!-- <origin rpy="0 0 1.5708" xyz="0 0 0" /> -->
-        <origin rpy="0 1.5708 0.0" xyz="0 0 0" />
+        <origin rpy="3.1416 0.0 -1.5708" xyz="0 0 0" />
         <geometry>
           <mesh filename="package://peacetolero_description/meshes/peacetolero_wheels.dae" scale="1 1 1"/>
         </geometry>
@@ -45,7 +45,26 @@
     <joint name="base_link2arm" type="fixed">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}alpha_suport"/>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <origin xyz="0.0 0.0 0.0" rpy="3.1416 0 0" />
+    </joint>
+
+    <link name="${prefix}zed_camera_link">
+    </link>
+    <link name="${prefix}zed_camera_link1">
+    </link>
+    
+    <!-- Define the fixed joint between base_link and zed_camera_link -->
+    <joint name="base_to_zed" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}zed_camera_link"/>
+      <origin xyz="0.2 0.0 0.0" rpy="1.57 3.1416 1.57"/>  <!-- Position and orientation of ZED relative to base_link -->
+    </joint>
+
+    <!-- Define the fixed joint between base_link and zed_camera_link -->
+    <joint name="base_to_zed1" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}zed_camera_link1"/>
+      <origin xyz="0.2 0.0 0.0" rpy="1.57 3.1416 1.57"/>  <!-- Position and orientation of ZED relative to base_link -->
     </joint>
 
   </xacro:macro>
